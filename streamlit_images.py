@@ -72,7 +72,7 @@ st.image(current_image, use_column_width=True)
 #         navigate_image("next")
 
 # Create columns layout: Left (for "Back"), Center (for image), Right (for "Next")
-col6, col7= st.columns(2)  # Adjust column ratios for spacing
+col6, col7= st.columns([1,1])  # Adjust column ratios for spacing
 
 # Left column: Back button
 with col6:
