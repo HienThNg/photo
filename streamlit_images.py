@@ -98,30 +98,13 @@ st.image(current_image, use_column_width=True)
 # Add custom CSS for mobile responsiveness
 st.markdown("""
     <style>
-        /* Desktop Style */
-        .mobile-hide {
-            display: block;
-        }
-        .mobile-show {
-            display: none;
-        }
-
         /* Mobile Style (max-width 768px) */
         @media (max-width: 768px) {
-            .mobile-hide {
-                display: none;
-            }
-            .mobile-show {
-                display: block;
-                text-align: center;
-                padding: 10px;
-            }
-
-            /* Stack buttons side-by-side on mobile */
+            /* Align buttons horizontally */
             .stButton {
                 display: inline-block;
                 width: 48%;  /* Buttons take up 48% of the width */
-                margin: 10px 1%;  /* Small margin between buttons */
+                margin: 1%;   /* Small margin between buttons */
             }
         }
     </style>
@@ -130,25 +113,20 @@ st.markdown("""
 # Create columns layout for Desktop (default)
 col1, col2, col3 = st.columns([3, 2, 3])  # Adjust column ratios for spacing
 
-# Back button in the left column (visible on desktop) with a unique key
+# Back button in the left column (visible on desktop)
 with col2:
     st.write("")  # Spacer for vertical alignment
     if st.button("Back", key="back_button_desktop"):
         navigate_image("back")
 
-# Next button in the right column (visible on desktop) with a unique key
+# Next button in the right column (visible on desktop)
 with col3:
     st.write("")  # Spacer for vertical alignment
     if st.button("Next", key="next_button_desktop"):
         navigate_image("next")
 
 # Create Mobile Layout (show buttons stacked on mobile)
-st.markdown('<div class="mobile-show">', unsafe_allow_html=True)
-# Place buttons side by side on mobile
 if st.button("Back", key="back_button_mobile"):
     navigate_image("back")
 if st.button("Next", key="next_button_mobile"):
     navigate_image("next")
-st.markdown('</div>', unsafe_allow_html=True)
-
-
