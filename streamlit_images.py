@@ -86,9 +86,9 @@ with col2:
 # Inject custom CSS
 st.write('''<style>
 [data-testid="column"] {
-    width: calc(2% - 1rem) !important;
-    flex: 1 1 calc(2% - 1rem) !important;
-    min-width: calc(2% - 1rem) !important;
+    width: calc(16.6666% - 1rem) !important;
+    flex: 1 1 calc(16.6666% - 1rem) !important;
+    min-width: calc(16.6666% - 1rem) !important;
 }
 .css-1l269bu {max-width:20% !important;}
 </style>''', unsafe_allow_html=True)
