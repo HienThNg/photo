@@ -117,9 +117,11 @@ st.markdown("""
                 padding: 10px;
             }
 
+            /* Stack buttons side-by-side on mobile */
             .stButton {
-                width: 100%;
-                margin: 10px 0; /* Space between buttons */
+                display: inline-block;
+                width: 48%;  /* Buttons take up 48% of the width */
+                margin: 10px 1%;  /* Small margin between buttons */
             }
         }
     </style>
@@ -142,6 +144,7 @@ with col3:
 
 # Create Mobile Layout (show buttons stacked on mobile)
 st.markdown('<div class="mobile-show">', unsafe_allow_html=True)
+# Place buttons side by side on mobile
 if st.button("Back", key="back_button_mobile"):
     navigate_image("back")
 if st.button("Next", key="next_button_mobile"):
