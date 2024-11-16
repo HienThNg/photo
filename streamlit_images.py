@@ -21,16 +21,14 @@ image_urls = [
 # st.write('################################################################################')
 
 
-def fix_mobile_columns():    
-    st.write('''<style>
-    [data-testid="column"] {
-        width: calc(16.6666% - 1rem) !important;
-        flex: 1 1 calc(16.6666% - 1rem) !important;
-        min-width: calc(16.6666% - 1rem) !important;
-    }
-    </style>''', unsafe_allow_html=True)
+st.write('''<style>
 
-fix_mobile_columns()
+[data-testid="column"] {
+    width: calc(33.3333% - 1rem) !important;
+    flex: 1 1 calc(33.3333% - 1rem) !important;
+    min-width: calc(33% - 1rem) !important;
+}
+</style>''', unsafe_allow_html=True)
 
 # Initialize session state for the current image index
 if "current_image" not in st.session_state:
