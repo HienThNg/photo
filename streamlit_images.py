@@ -98,15 +98,12 @@ st.image(current_image, use_column_width=True)
 # Add custom CSS for mobile responsiveness
 st.markdown("""
     <style>
-        /* Mobile Style (max-width 768px) */
-        @media (max-width: 768px) {
-            /* Align buttons horizontally */
-            .stButton {
-                display: inline-block;
-                width: 48%;  /* Buttons take up 48% of the width */
-                margin: 1%;   /* Small margin between buttons */
-            }
-        }
+[data-testid="column"] {
+    width: calc(25% - 1rem) !important;
+    flex: 1 1 calc(25% - 1rem) !important;
+    min-width: calc(20% - 1rem) !important;
+}
+.css-1l269bu {max-width:20% !important;}
     </style>
 """, unsafe_allow_html=True)
 
