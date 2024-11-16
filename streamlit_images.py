@@ -63,17 +63,17 @@ with col3:
         navigate_image("next")
 
 # Create columns layout: Left (for "Back"), Center (for image), Right (for "Next")
-col1, col2= st.columns(2)  # Adjust column ratios for spacing
+col6, col7= st.columns(2)  # Adjust column ratios for spacing
 
 # Left column: Back button
-with col1:
+with col6:
     st.write("")  # Spacer for vertical alignment
     if st.button("Back"):
         navigate_image("back")
 
 
 # Right column: Next button
-with col2:
+with col7:
     st.write("")  # Spacer for vertical alignment
     if st.button("Next"):
         navigate_image("next")
