@@ -21,15 +21,6 @@ image_urls = [
 # st.write('################################################################################')
 
 
-st.write('''<style>
-
-[data-testid="column"] {
-    width: calc(33.3333% - 1rem) !important;
-    flex: 1 1 calc(33.3333% - 1rem) !important;
-    min-width: calc(33% - 1rem) !important;
-}
-</style>''', unsafe_allow_html=True)
-
 # Initialize session state for the current image index
 if "current_image" not in st.session_state:
     st.session_state.current_image = 0
@@ -64,6 +55,17 @@ st.image(current_image, use_column_width=True)
 
 # Create columns layout: Left (for "Back"), Center (for image), Right (for "Next")
 col1, col2= st.columns([1,1])  # Adjust column ratios for spacing
+
+
+st.write('''<style>
+
+[data-testid="column"] {
+    width: calc(25% - 1rem) !important;
+    flex: 1 1 calc(25% - 1rem) !important;
+    min-width: calc(20% - 1rem) !important;
+}
+.css-1l269bu {max-width:20% !important;}
+</style>''', unsafe_allow_html=True)
 
 # Left column: Back button
 with col1:
