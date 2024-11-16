@@ -10,10 +10,10 @@ image_urls = [
 
 ]
 
-st.title("Display Multiple Images")
+# st.title("Display Multiple Images")
 
-# Display images
-st.image(image_urls, width=300)
+# # Display images
+# st.image(image_urls, width=300)
 
 
 #------------------------------------
@@ -37,7 +37,7 @@ current_image = image_urls[st.session_state.current_image]
 st.image(current_image, use_column_width=True)
 
 # Create columns layout: Left (for "Back"), Center (for image), Right (for "Next")
-col1, col2 = st.columns([8, 1])  # Adjust column ratios for spacing
+col1, col2 = st.columns([7, 1])  # Adjust column ratios for spacing
 
 # Left column: Back button
 with col1:
