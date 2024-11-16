@@ -30,15 +30,6 @@ st.write('''<style>
 .css-1l269bu {max-width:20% !important;}
 </style>''', unsafe_allow_html=True)
 
-def fix_mobile_columns():    
-    st.write('''<style>
-    [data-testid="column"] {
-        width: calc(16.6666% - 1rem) !important;
-        flex: 1 1 calc(16.6666% - 1rem) !important;
-        min-width: calc(16.6666% - 1rem) !important;
-    }
-    </style>''', unsafe_allow_html=True)
-
 # Initialize session state for the current image index
 if "current_image" not in st.session_state:
     st.session_state.current_image = 0
@@ -67,6 +58,22 @@ with col2:
 
 # Right column: Next button
 with col3:
+    st.write("")  # Spacer for vertical alignment
+    if st.button("Next"):
+        navigate_image("next")
+
+# Create columns layout: Left (for "Back"), Center (for image), Right (for "Next")
+col1, col2= st.columns(2)  # Adjust column ratios for spacing
+
+# Left column: Back button
+with col1:
+    st.write("")  # Spacer for vertical alignment
+    if st.button("Back"):
+        navigate_image("back")
+
+
+# Right column: Next button
+with col2:
     st.write("")  # Spacer for vertical alignment
     if st.button("Next"):
         navigate_image("next")
