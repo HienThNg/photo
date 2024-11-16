@@ -128,17 +128,17 @@ st.markdown("""
 # Create columns layout for Desktop (default)
 col1, col2, col3 = st.columns([3, 2, 3])  # Adjust column ratios for spacing
 
-# # Back button in the left column (visible on desktop)
-# with col2:
-#     st.write("")  # Spacer for vertical alignment
-#     if st.button("Back"):
-#         navigate_image("back")
+# Back button in the left column (visible on desktop)
+with col2:
+    st.write("")  # Spacer for vertical alignment
+    if st.button("Back"):
+        navigate_image("back")
 
-# # Next button in the right column (visible on desktop)
-# with col3:
-#     st.write("")  # Spacer for vertical alignment
-#     if st.button("Next"):
-#         navigate_image("next")
+# Next button in the right column (visible on desktop)
+with col3:
+    st.write("")  # Spacer for vertical alignment
+    if st.button("Next"):
+        navigate_image("next")
 
 # Create Mobile Layout (show buttons stacked on mobile)
 st.markdown('<div class="mobile-show">', unsafe_allow_html=True)
