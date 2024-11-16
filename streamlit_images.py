@@ -52,6 +52,17 @@ columns = """
 
 st.markdown(columns, unsafe_allow_html=True)
 
+def fix_mobile_columns():    
+    st.write('''<style>
+    [data-testid="column"] {
+        width: calc(16.6666% - 1rem) !important;
+        flex: 1 1 calc(16.6666% - 1rem) !important;
+        min-width: calc(16.6666% - 1rem) !important;
+    }
+    </style>''', unsafe_allow_html=True)
+
+fix_mobile_columns()
+
 # Initialize session state for the current image index
 if "current_image" not in st.session_state:
     st.session_state.current_image = 0
