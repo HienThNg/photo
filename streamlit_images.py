@@ -79,3 +79,32 @@ with col2:
     if st.button("Next"):
         navigate_image("next")
 
+
+
+
+
+# Inject custom CSS
+st.write('''<style>
+[data-testid="column"] {
+    width: calc(25% - 1rem) !important;
+    flex: 1 1 calc(25% - 1rem) !important;
+    min-width: calc(20% - 1rem) !important;
+}
+.css-1l269bu {max-width:20% !important;}
+</style>''', unsafe_allow_html=True)
+
+# Example layout to see the result
+col5, col6, col7, col8 = st.columns(4)  # Four columns layout
+
+with col5:
+    st.button("Button 1")
+
+with col6:
+    st.button("Button 2")
+
+with col7:
+    st.button("Button 3")
+
+with col8:
+    st.button("Button 4")
+
