@@ -20,24 +20,37 @@ image_urls = [
 
 # st.write('################################################################################')
 
-st.write('''<style>
+columns = """
+<style>
+    div.container {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 2em;
+        align-items: flex-start;
+        align-content: flex-start;
+        justify-content: flex-start;
+    }
+    div.item {
+        flex: 1 1 auto;
+    }
+</style>
+<div class="container">
+    <div class="item">
+        <table>
+        <tr><th>alpha beta</th><th>gamma delta</th><th>epsilon zeta</th></tr>
+        <tr><td>123</td><td>456</td><td>789</td></tr>
+        </table>
+    </div>
+    <div class="item">
+        <table>
+        <tr><th>eta theta</th><th>iota kappa</th><th>lambda mu</th></tr>
+        <tr><td>123</td><td>456</td><td>789</td></tr>
+        </table>
+    </div>
+</div>
+"""
 
-[data-testid="column"] {
-    width: calc(25% - 1rem) !important;
-    flex: 1 1 calc(25% - 1rem) !important;
-    min-width: calc(20% - 1rem) !important;
-}
-.css-1l269bu {max-width:20% !important;}
-</style>''', unsafe_allow_html=True)
-
-st.write('''<style>
-
-[data-testid="column"] {
-    width: calc(33.3333% - 1rem) !important;
-    flex: 1 1 calc(33.3333% - 1rem) !important;
-    min-width: calc(33% - 1rem) !important;
-}
-</style>''', unsafe_allow_html=True)
+st.markdown(columns, unsafe_allow_html=True)
 
 # Initialize session state for the current image index
 if "current_image" not in st.session_state:
