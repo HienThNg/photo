@@ -46,21 +46,21 @@ def navigate_image(direction):
 current_image = image_urls[st.session_state.current_image]
 st.image(current_image, use_column_width=True)
 
-# Create columns layout: Left (for "Back"), Center (for image), Right (for "Next")
-col1, col2, col3, col4 = st.columns([3,2,2,3])  # Adjust column ratios for spacing
+# # Create columns layout: Left (for "Back"), Center (for image), Right (for "Next")
+# col1, col2, col3, col4 = st.columns([3,2,2,3])  # Adjust column ratios for spacing
 
-# Left column: Back button
-with col2:
-    st.write("")  # Spacer for vertical alignment
-    if st.button("Back"):
-        navigate_image("back")
+# # Left column: Back button
+# with col2:
+#     st.write("")  # Spacer for vertical alignment
+#     if st.button("Back"):
+#         navigate_image("back")
 
 
-# Right column: Next button
-with col3:
-    st.write("")  # Spacer for vertical alignment
-    if st.button("Next"):
-        navigate_image("next")
+# # Right column: Next button
+# with col3:
+#     st.write("")  # Spacer for vertical alignment
+#     if st.button("Next"):
+#         navigate_image("next")
 
 # Create columns layout: Left (for "Back"), Center (for image), Right (for "Next")
 col6, col7= st.columns(2)  # Adjust column ratios for spacing
