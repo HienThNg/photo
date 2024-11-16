@@ -40,14 +40,14 @@ st.image(current_image, use_column_width=True)
 col1, col2, col3, col4 = st.columns([4,1,1,4])  # Adjust column ratios for spacing
 
 # Left column: Back button
-with col1:
+with col2:
     st.write("")  # Spacer for vertical alignment
     if st.button("Back"):
         navigate_image("back")
 
 
 # Right column: Next button
-with col2:
+with col3:
     st.write("")  # Spacer for vertical alignment
     if st.button("Next"):
         navigate_image("next")
