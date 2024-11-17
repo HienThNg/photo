@@ -6,14 +6,17 @@ image_urls = [
     "https://app.thesimple.vn/uploads/contact/customer67361a5dc7982.png",
     "https://app.thesimple.vn/uploads/contact/customer67361a2ce5345.png",
     "https://app.thesimple.vn/uploads/contact/customer673619c6be898.png",
-    "https://app.thesimple.vn/uploads/contact/customer67361a77936f0.png"
+    "https://app.thesimple.vn/uploads/contact/customer67361a77936f0.png",
+    "./image/image_1.jpg"
 
 ]
 
-# st.title("Display Multiple Images")
+st.header("Ảnh cưới")
 
-# # Display images
-# st.image(image_urls, width=300)
+st.title("Display Multiple Images")
+
+# Display images
+st.image(image_urls, width=300)
 
 
 #------------------------------------
@@ -80,30 +83,6 @@ with col2:
         navigate_image("next")
 
 
-
-
-
-# Inject custom CSS
-st.write('''<style>
-[data-testid="column"] {
-    width: calc(16.6666% - 1rem) !important;
-    flex: 1 1 calc(16.6666% - 1rem) !important;
-    min-width: calc(16.6666% - 1rem) !important;
-}
-.css-1l269bu {max-width:20% !important;}
-</style>''', unsafe_allow_html=True)
-
-# Example layout to see the result
-col5, col6, col7, col8 = st.columns(4)  # Four columns layout
-
-with col5:
-    st.button("Button 1")
-
-with col6:
-    st.button("Button 2")
-
-with col7:
-    st.button("Button 3")
 
 with col8:
     st.button("Button 4")
