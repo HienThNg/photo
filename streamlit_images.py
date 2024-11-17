@@ -38,7 +38,7 @@ def navigate_image(direction):
 
 
 current_image = image_urls[st.session_state.current_image]
-st.image(current_image, use_column_width=True)
+st.image(current_image, use_container_width=True)
 
 # Create columns layout: Left (for "Back"), Center (for image), Right (for "Next")
 col1, col2, col3, col4 = st.columns([3,2,2,3])  # Adjust column ratios for spacing
