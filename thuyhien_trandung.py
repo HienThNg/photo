@@ -30,7 +30,7 @@ st.image('./Online/about1.png')
 
 st.write('')
 
-st.image('./Online/baohy2.png')
+st.image('./Online/about2.png')
 #-----------------------------------------------------------------------------------------------
 
 st.write('')
