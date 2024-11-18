@@ -24,6 +24,11 @@ st.set_page_config(
 st.image('./Online/bia.png')
 
 #-----------------------------------------------------------------------------------------------
+# Nhạc
+st.write('A Thousand Years - Christina Perri')
+st.audio("music.mp3", format="audio/mpeg", loop=True)
+
+#-----------------------------------------------------------------------------------------------
 # Thông tin
 
 st.image('./Online/about1.png')
@@ -134,7 +139,6 @@ st.markdown('''
 ''', unsafe_allow_html=True)
 st.divider()
 
-st.audio("music.mp3", format="audio/mpeg", loop=True)
 #-----------------------------------------------------------------------------------------------
 # Kết
 st.image('./Online/6734271a2abeb-FOOTER202.png')
