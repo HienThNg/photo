@@ -91,9 +91,19 @@ st.image('./Online/map-bao-hy.png')
 
 #-----------------------------------------------------------------------------------------------
 # Lời cảm ơn
-st.markdown('''<div style="text-align: center">
+mystyle = '''
+    <style>
+        p {
+            text-align: center;
+        }
+    </style>
+    '''
+
+st.markdown(mystyle, unsafe_allow_html=True)
+
+st.markdown('''
 Kính gửi Quý Khách, chúng tôi xin chân thành cảm ơn Quý Khách đã dành thời gian đến tham dự đám cưới của chúng tôi. Sự có mặt của Quý Khách đã làm cho ngày trọng đại của chúng tôi thêm ý nghĩa và vui vẻ. Chúng tôi xin gửi lời chúc sức khỏe và hạnh phúc đến Quý Khách và Gia đình.
-</div>''')
+''')
 
 
 
