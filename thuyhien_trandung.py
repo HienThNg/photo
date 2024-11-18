@@ -139,11 +139,34 @@ st.markdown('''
 ''', unsafe_allow_html=True)
 st.divider()
 
+
 #-----------------------------------------------------------------------------------------------
 # Kết
 st.image('./Online/6734271a2abeb-FOOTER202.png')
 
 #-----------------------------------------------------------------------------------------------
+
+# Path to your audio file
+audio_file_path = "music.mp3"  # Replace with the path to your file
+
+# Read the audio file
+with open(audio_file_path, "rb") as audio_file:
+    audio_bytes = audio_file.read()
+
+# Convert audio to base64 for embedding
+audio_base64 = base64.b64encode(audio_bytes).decode()
+
+# Generate HTML for autoplay audio
+audio_html = f"""
+    <audio autoplay loop>
+        <source src="data:audio/mpeg;base64,{audio_base64}" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+"""
+
+# Render the HTML
+st.markdown(audio_html, unsafe_allow_html=True)
+
 
 
 
