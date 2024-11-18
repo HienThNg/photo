@@ -105,6 +105,11 @@ st.markdown('''
 Kính gửi Quý Khách, chúng tôi xin chân thành cảm ơn Quý Khách đã dành thời gian đến tham dự đám cưới của chúng tôi. Sự có mặt của Quý Khách đã làm cho ngày trọng đại của chúng tôi thêm ý nghĩa và vui vẻ. Chúng tôi xin gửi lời chúc sức khỏe và hạnh phúc đến Quý Khách và Gia đình.
 ''')
 
+#-----------------------------------------------------------------------------------------------
+# Kết
+st.image('./Online/6734271a2abeb-FOOTER202.png.png')
+
+#-----------------------------------------------------------------------------------------------
 
 
 
