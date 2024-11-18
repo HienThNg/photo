@@ -86,14 +86,14 @@ with col3:
         navigate_image("next")
 #-----------------------------------------------------------------------------------------------
 # Map
-st.title('Bản đồ')
+st.header('Bản đồ')
 st.image('./Online/map-bao-hy.png')
 
 #-----------------------------------------------------------------------------------------------
 # Lời cảm ơn
-st.header('''
+st.write('''<style>
 Kính gửi Quý Khách, chúng tôi xin chân thành cảm ơn Quý Khách đã dành thời gian đến tham dự đám cưới của chúng tôi. Sự có mặt của Quý Khách đã làm cho ngày trọng đại của chúng tôi thêm ý nghĩa và vui vẻ. Chúng tôi xin gửi lời chúc sức khỏe và hạnh phúc đến Quý Khách và Gia đình.
-''')
+{text-align: center}</style>''')
 
 
 
