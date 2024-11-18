@@ -46,16 +46,16 @@ st.image('./Online/baohy3.png')
 #-----------------------------------------------------------------------------------------------
 # List of image URLs
 image_urls = [
-    "https://app.thesimple.vn/uploads/contact/customer67361aa1b3fcb.png", 
-    "https://app.thesimple.vn/uploads/contact/customer67361a5dc7982.png",
-    "https://app.thesimple.vn/uploads/contact/customer67361a2ce5345.png",
-    "https://app.thesimple.vn/uploads/contact/customer673619c6be898.png",
-    "https://app.thesimple.vn/uploads/contact/customer67361a77936f0.png"
+    # "https://app.thesimple.vn/uploads/contact/customer67361aa1b3fcb.png", 
+    # "https://app.thesimple.vn/uploads/contact/customer67361a5dc7982.png",
+    # "https://app.thesimple.vn/uploads/contact/customer67361a2ce5345.png",
+    # "https://app.thesimple.vn/uploads/contact/customer673619c6be898.png",
+    # "https://app.thesimple.vn/uploads/contact/customer67361a77936f0.png"
     "./image/image_1.jpg",
-    "./image/image1.jpg",
-    "./image/image3.jpg",
-    "./image/image4.jpg",
-    "./image/image5.jpg"
+    "./image/image1.png",
+    "./image/image3.png",
+    "./image/image4.png",
+    "./image/image5.png"
 
 ]
 
