@@ -25,8 +25,8 @@ st.image('./Online/bia.png')
 
 #-----------------------------------------------------------------------------------------------
 # Nhạc
-st.write('A Thousand Years - Christina Perri')
-st.audio("music.mp3", format="audio/mpeg", loop=True)
+# st.write('A Thousand Years - Christina Perri')
+# st.audio("music.mp3", format="audio/mpeg", loop=True)
 
 #-----------------------------------------------------------------------------------------------
 # Thông tin
@@ -156,7 +156,7 @@ with open(audio_file_path, "rb") as audio_file:
 # Convert audio to base64 for embedding
 audio_base64 = base64.b64encode(audio_bytes).decode()
 
-# Generate HTML for autoplay audio
+# Generate HTML for autoplay and loop audio
 audio_html = f"""
     <audio autoplay loop>
         <source src="data:audio/mpeg;base64,{audio_base64}" type="audio/mpeg">
