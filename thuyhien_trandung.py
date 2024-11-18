@@ -95,10 +95,10 @@ mystyle = '''
     <style>
         p {
             text-align: center;
+            font-size: 30px; /* Adjust size as needed, e.g., 20px, 50px */
         }
     </style>
     '''
-
 st.markdown(mystyle, unsafe_allow_html=True)
 
 st.markdown('''
