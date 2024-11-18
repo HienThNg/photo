@@ -1,22 +1,38 @@
 import streamlit as st
+import base64
+
+
+#-----------------------------------------------------------------------------------------------------------
+### gif from local file
+file_ = open("/Online/673427199f66a-330618_GIF.gif", "rb")
+contents = file_.read()
+data_url = base64.b64encode(contents).decode("utf-8")
+file_.close()
+
+st.markdown(
+    f'<img src="data:image/gif;base64,{data_url}" alt="cat gif">',
+    unsafe_allow_html=True,
+)
+
+#-----------------------------------------------------------------------------------------------
+
 
 # List of image URLs
 image_urls = [
-    "https://app.thesimple.vn/uploads/contact/customer67361aa1b3fcb.png",  # Replace with your image URLs
-    "https://app.thesimple.vn/uploads/contact/customer67361a5dc7982.png",
-    "https://app.thesimple.vn/uploads/contact/customer67361a2ce5345.png",
-    "https://app.thesimple.vn/uploads/contact/customer673619c6be898.png",
-    "https://app.thesimple.vn/uploads/contact/customer67361a77936f0.png",
-    "./image/image_1.jpg"
+    # "https://app.thesimple.vn/uploads/contact/customer67361aa1b3fcb.png",  # Replace with your image URLs
+    # "https://app.thesimple.vn/uploads/contact/customer67361a5dc7982.png",
+    # "https://app.thesimple.vn/uploads/contact/customer67361a2ce5345.png",
+    # "https://app.thesimple.vn/uploads/contact/customer673619c6be898.png",
+    # "https://app.thesimple.vn/uploads/contact/customer67361a77936f0.png",
+    "./image/image_1.jpg",
+    "./image/image1.jpg",
+    "./image/image3.jpg",
+    "./image/image4.jpg",
+    "./image/image5.jpg"
 
 ]
 
 st.header("Ảnh cưới")
-
-st.title("Display Multiple Images")
-
-# Display images
-st.image(image_urls, width=300)
 
 
 #------------------------------------
@@ -53,7 +69,7 @@ with col2:
 with col3:
     if st.button("Ảnh tiếp theo"):
         navigate_image("next")
-
+#-----------------------------------------------------------------
 
 
 
