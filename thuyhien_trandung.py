@@ -80,19 +80,6 @@ def navigate_image(direction):
     elif direction == "back":
         st.session_state.current_image = (st.session_state.current_image - 1) % len(image_urls)
 
-# Custom CSS for buttons
-st.markdown(
-    """
-    <style>
-    button[data-baseweb="button"] {
-        font-size: 18px !important; /* Set the font size */
-        padding: 5px 10px; /* Adjust padding for better appearance */
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
-
 current_image = image_urls[st.session_state.current_image]
 st.image(current_image, use_container_width=True)
 
@@ -139,7 +126,6 @@ st.markdown('''
     <style>
         p {
             text-align: center;
-            font-size: 25px; /* Adjust size as needed */
         }
     </style>
     <p>
