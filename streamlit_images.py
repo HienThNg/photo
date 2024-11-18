@@ -16,7 +16,7 @@ import base64
 
 #-----------------------------------------------------------------------------------------------
 
-st.image('/Online/bia.png')
+st.image('./Online/bia.png')
 
 
 # List of image URLs
