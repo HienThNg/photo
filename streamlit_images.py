@@ -1,7 +1,19 @@
 import streamlit as st
 import base64
 
-
+st.set_page_config(
+    page_title="Thúy Hiền & Trần Dũng",
+    page_icon="🌟",
+    layout="centered",  # Options: "centered" or "wide"
+    initial_sidebar_state="expanded",
+    theme={
+        "primaryColor": "#1E90FF",
+        "backgroundColor": "#AF1740",
+        "secondaryBackgroundColor": "#DE7C7D",
+        "textColor": "#F6EFBD",
+        "font": "sans serif"
+    }
+)
 #-----------------------------------------------------------------------------------------------------------
 ### gif from local file
 # file_ = open("/Online/673427199f66a-330618_GIF.gif", "rb")
