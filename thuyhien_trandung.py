@@ -134,6 +134,7 @@ st.markdown('''
 ''', unsafe_allow_html=True)
 st.divider()
 
+st.audio("music.mp3", format="audio/mpeg", loop=True)
 #-----------------------------------------------------------------------------------------------
 # Kết
 st.image('./Online/6734271a2abeb-FOOTER202.png')
