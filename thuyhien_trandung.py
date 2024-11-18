@@ -19,10 +19,19 @@ st.set_page_config(
 # )
 
 #-----------------------------------------------------------------------------------------------
+# Bìa
 
 st.image('./Online/bia.png')
 
+#-----------------------------------------------------------------------------------------------
+# Thiệp
+st.image('./Online/baohy1.png')
 
+st.write('')
+
+st.image('./Online/baohy2.png')
+
+#-----------------------------------------------------------------------------------------------
 # List of image URLs
 image_urls = [
     # "https://app.thesimple.vn/uploads/contact/customer67361aa1b3fcb.png",  # Replace with your image URLs
