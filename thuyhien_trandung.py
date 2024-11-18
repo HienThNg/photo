@@ -95,7 +95,7 @@ mystyle = '''
     <style>
         p {
             text-align: center;
-            font-size: 30px; /* Adjust size as needed, e.g., 20px, 50px */
+            font-size: 25px; /* Adjust size as needed, e.g., 20px, 50px */
         }
     </style>
     '''
